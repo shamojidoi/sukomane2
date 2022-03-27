@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            width: 100%;
+
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('renderCanvas');
+        const engine = new BABYLON.Engine(canvas, true);
+
+        const createScene = function () {
+            const scene = new BABYLON.Scene(engine);
+
+            const camera = new BABYLON.ArcRotateCamera('Camera', 1, 1, 1, new BABYLON.Vector3(0, 0, 0), scene);
+
+            const cameraFovRadian = 90 * (Math.PI / 180);
+            camera.fov = cameraFovRadian
+            camera.attachControl(canvas, true);
+
+            const light = new BABYLON.HemisphericLight('Light', new BABYLON.Vector3(0, 0, 0), scene);
+
+            // トップアンドボトム形式の mp4 ファイルを指定します (↓のようなフォーマットです)
+            // https://github.com/googlearchive/vrview/blob/master/examples/video/congo_2048.mp4
+            const videoDome = new BABYLON.VideoDome(
+                'VideoDome',
+                '../motionact/videos/baseball.mp4',
+                {},
+                scene
+            );
+            // トップアンドボトム形式の 360動画を視聴するために viewMode を変更する
+            videoDome.videoMode = BABYLON.VideoDome.MODE_TOPBOTTOM;
+
+            return scene;
+        };
+
+        const scene = createScene();
+
+        // WebVR モードを有効にする
+        const vrHelper = scene.createDefaultVRExperience();
+        vrHelper.enableInteractions();
+
+        engine.runRenderLoop(() => {
+            scene.render();
+        });
+
+        window.addEventListener('resize', function () {
+           engine.resize();
+        });
+    </script>
+</body>
+</html>
