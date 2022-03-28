@@ -381,7 +381,7 @@ session_start();
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-baseball-ball"></i>　試合記録　打撃成績</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="404.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="far fa-calendar-alt text-white-50"></i>　試合サマリー</a>
                     </div>
 
@@ -521,7 +521,9 @@ session_start();
                                     <div>:安打　|</div>
                                     <div class="bold" style="font-weight: bold;">太字</div>
                                     <div class="text">:打点　｜</div>
+                                    <a class="text-gray-800" href="" data-toggle="modal" data-target="#Modal" style="color: #2979ff;text-decoration: underline;cursor: pointer;">
                                     <div class="dialog" style="color: #2979ff;text-decoration: underline;cursor: pointer;">略語の説明</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -7773,6 +7775,23 @@ session_start();
             </div>
         </div>
     </div>
+
+        <!--Modal-->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">略語の説明</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">略語の説明</div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

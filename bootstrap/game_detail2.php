@@ -496,37 +496,88 @@ session_start();
                         </div>
                     </div>
                     <div class="game-report" style="font-size: 100%;vertical-align: baseline;">
-                        <div class="title-bar">
-                            <div class="title">
-                            <div class="name" style="font-size: 18px; font-weight: bold;"><a href="game_detail.php">打撃成績</a></div>
-                                <div class="name" style="font-size: 18px; font-weight: bold;">　/　</div>
-                                <span class="name">投手成績</span>
+                        <div class="title-bar" style="box-sizing: border-box;">
+                            <div class="title" style="justify-content: space-between;
+                                height: 32px;
+                                color: #37474f;
+                                padding: 2px 10px;
+                                box-sizing: border-box;
+                                background: #eceff1;
+                                display: flex;
+                                align-items: center;">
+                            <div class="name" style="font-size: 18px; font-weight: bold;">
+                            <a href="game_detail.php">打撃成績</a>　/　投手成績</div>
                             </div>
-                            ::after
                         </div>
-                        <div class="pitcher-record">
-                            <div class="visitor">
-                                <div class="record-one-ball-pitcher-record-table">
-                                    <div class="team-name-row" style="border-bottom: 2px solid rgb(25, 118, 210); ">
-                                        <div class="name">スコマネ高校</div>
+                        <div class="pitcher-record" style="background-color: #ffffff;margin-bottom: 16px; box-sizing: border-box;">
+                            <div class="visitor" style="margin-bottom: 8px;">
+                                <div class="record-one-ball-pitcher-record-table" style="background-color: #ffffff;">
+                                    <div class="team-name-row" style="border-bottom: 2px solid rgb(25, 118, 210);width: 100%;
+                                        height: 40px;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: flex-end; ">
+                                        <div class="name" style="font-size: 18px;
+                                            font-weight: bold;
+                                            color: #37474f;
+                                            margin-left: 10px;
+                                            margin-bottom: 3px;">スコマネ高校</div>
                                     </div>
-                                    <div class="table-area">
-                                        <div class="fixed-area">
-                                            <div class="fixed-head">
-                                                <div class="nameArea">
-                                                    <div class="resultHead"></div>
-                                                    <div class="nameHead">選手名</div>
+                                    <div class="table-area" style="display: flex;border-bottom: solid 1px #cfd8dc;">
+                                        <div class="fixed-area" style="font-size: 14px;
+                                            color: #37474f;
+                                            width: 238px;
+                                            border-right: none;
+                                            position: relative;
+                                            border-right: solid 1px #cfd8dc;">
+                                            <div class="fixed-head" style="height: 122px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-bottom: solid 1px #cfd8dc;
+                                                position: relative;
+                                                font-size: 13px;
+                                                color: #78909c;">
+                                                <div class="nameArea" style="display: flex;
+                                                    justify-content: flex-start;
+                                                    align-items: center;
+                                                    width: 100%;
+                                                    height: 100%;">
+                                                    <div class="resultHead" style="width: 40px;
+                                                        height: 100%;
+                                                        border-right: solid 1px #cfd8dc;"></div>
+                                                    <div class="nameHead" style="width: 65%;
+                                                        height: 100%;
+                                                        font-size: 12px;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        padding-left: 8px;">選手名</div>
                                                 </div>
                                             </div>
-                                            <div class="fixed-body">
-                                                <div class="each-row list-item">
-                                                    <div class="playerArea">
-                                                        <div class="pitching-result">
-                                                            <div class="wlsh have-title">負</div>
+                                            <div class="fixed-body" style="border-bottom: solid 1px #cfd8dc;">
+                                                <div class="each-row list-item" style="width: 100%;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        height: 32px;">
+                                                    <div class="playerArea" style="width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        box-sizing: border-box;
+                                                        position: relative;">
+                                                        <div class="pitching-result" style="width: 40px;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            border-right: solid 1px #cfd8dc;">
+                                                            <div class="wlsh have-title" style="font-size: 14px;color: #37474f;">負</div>
                                                         </div>
-                                                        <div class="player">
-                                                            <div class="player-with-flag">
-                                                                <div class="directory-link playerName">
+                                                        <div class="player" style="margin-left: 8px;">
+                                                            <div class="player-with-flag" style="display: flex;align-items: center;">
+                                                                <div class="directory-link playerName" style="font-weight: bold;font-size: 13px;">
                                                                     <div class="player">
                                                                         <div class="name" style="font-size: 16px; color: rgb(13, 71, 161); font-weight: bold;">スコマネ太郎</div>
                                                                     </div>
@@ -535,15 +586,26 @@ session_start();
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="each-row even list-item">
-                                                    <div class="playerArea">
-                                                        <div class="pitching-result">
-                                                            <div class="wlsh"></div>
+                                                <div class="each-row even list-item" style="background-color: #eceff1;">
+                                                    <div class="playerArea" style="width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        box-sizing: border-box;
+                                                        position: relative;">
+                                                        <div class="pitching-result" style="width: 40px;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            border-right: solid 1px #cfd8dc;">
+                                                            <div class="wlsh" style="font-size: 14px;color: #37474f;"></div>
                                                         </div>
-                                                        <div class="player">
-                                                            <div class="player-with-flag">
-                                                                <div class="directory-link playerName">
-                                                                    <div class="player">
+                                                        <div class="player" style="margin-left: 8px;">
+                                                            <div class="player-with-flag" style="display: flex;align-items: center;">
+                                                                <div class="directory-link playerName" style="font-weight: bold;font-size: 13px;">
+                                                                    <div class="player" >
                                                                         <div class="name" style="font-size: 16px; color: rgb(13, 71, 161); font-weight: bold;">スコマネ次郎</div>
                                                                     </div>
                                                                 </div>
@@ -552,104 +614,652 @@ session_start();
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="fixed-summary">
-                                                <div class="result"></div>
+                                            <div class="fixed-summary" style="height: 32px;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                color: #37474f;
+                                                padding-right: 10px;">
+                                                <div class="result" style="width: 40px;
+                                                    height: 100%;
+                                                    border-right: solid 1px #cfd8dc;"></div>
                                                 <div class="label">合計</div>
                                             </div>
                                         </div>
-                                        <div class="scrollable-area">
-                                            <div class="scrollable">
-                                                <div class="table header">
-                                                    <div class="row header">
-                                                        <div class="era header highlight">防御率</div>
-                                                        <div class="bf header">打者</div>
-                                                        <div class="hit header">被安打</div>
-                                                        <div class="homerun header">被本塁打</div>
-                                                        <div class="strikeout header">奪三振</div>
-                                                        <div class="bob header">与四球</div>
-                                                        <div class="hit-bastsmen header">与死球</div>
-                                                        <div class="point-lost header">失点</div>
-                                                        <div class="earned-run header">自責点</div>
-                                                        <div class="ip header">投球回</div>
-                                                        <div class="nopg header">投球数</div>
-                                                        <div class="each-ball header">
+                                        <div class="scrollable-area" style="width: 894px;white-space: nowrap;">
+                                            <div class="scrollable" style="width: 100%;
+                                                background-color: #ffffff;
+                                                color: #37474f;
+                                                border-collapse: separate;
+                                                border-spacing: 0;">
+                                                <div class="table header" style="width: 100%;">
+                                                    <div class="row header" style="height: 122px;border-bottom: solid 1px #cfd8dc;">
+                                                        <div class="era header highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">防御率</div>
+                                                        <div class="bf header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">打者</div>
+                                                        <div class="hit header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">被安打</div>
+                                                        <div class="homerun header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">被本塁打</div>
+                                                        <div class="strikeout header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">奪三振</div>
+                                                        <div class="bob header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">与四球</div>
+                                                        <div class="hit-bastsmen header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">与死球</div>
+                                                        <div class="point-lost header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">失点</div>
+                                                        <div class="earned-run header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">自責点</div>
+                                                        <div class="ip header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">投球回</div>
+                                                        <div class="nopg header" sstyle="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">投球数</div>
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">ストレート</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">スライダー</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">フォーク</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">カーブ</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">シュート</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">チェンジアップ</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="table body">
-                                                    <div class="row body list-item">
-                                                        <div class="era body highlight">4.50</div>
-                                                        <div class="bf body">27</div>
-                                                        <div class="hit body">8</div>
-                                                        <div class="homerun body">1</div>
-                                                        <div class="strikeout body">3</div>
-                                                        <div class="bob body">2</div>
-                                                        <div class="hit-bastsmen body no-data">0</div>
-                                                        <div class="point-lost body">4</div>
-                                                        <div class="earned-run body">3</div>
-                                                        <div class="ip body">6</div>
-                                                        <div class="nopg body">99</div>
-                                                        <div class="each-ball body">46</div>
-                                                        <div class="each-ball body">20</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">5</div>
-                                                        <div class="each-ball body">5</div>
+                                                <div class="table body" style="border-bottom: solid 1px #cfd8dc;
+                                                    border-collapse: separate;
+                                                    border-spacing: 0;
+                                                    width: 100%;">
+                                                    <div class="row body list-item" style="height: 32px;
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: space-between;">
+                                                        <div class="era body highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4.50</div>
+                                                        <div class="bf body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">27</div>
+                                                        <div class="hit body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="bob body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">2</div>
+                                                        <div class="hit-bastsmen body no-data" style="color: #b0bec5;font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">6</div>
+                                                        <div class="nopg body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">99</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">20</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
                                                     </div>
-                                                    <div class="row body even list-item">
-                                                        <div class="era body highlight">4.50</div>
-                                                        <div class="bf body">27</div>
-                                                        <div class="hit body">8</div>
-                                                        <div class="homerun body">1</div>
-                                                        <div class="strikeout body">3</div>
-                                                        <div class="bob body">2</div>
-                                                        <div class="hit-bastsmen body no-data">0</div>
-                                                        <div class="point-lost body">4</div>
-                                                        <div class="earned-run body">3</div>
-                                                        <div class="ip body">6</div>
-                                                        <div class="nopg body">99</div>
-                                                        <div class="each-ball body">46</div>
-                                                        <div class="each-ball body">20</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">5</div>
-                                                        <div class="each-ball body">5</div>
+                                                    <div class="row body even list-item" style="background-color: #eceff1; height: 32px;
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: spa">
+                                                        <div class="era body highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4.50</div>
+                                                        <div class="bf body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">27</div>
+                                                        <div class="hit body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="bob body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">2</div>
+                                                        <div class="hit-bastsmen body no-data" style="color: #b0bec5;font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">6</div>
+                                                        <div class="nopg body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">99</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">20</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
                                                     </div>
                                                 </div>
-                                                <div class="table summary">
-                                                    <div class="row summary">
-                                                        <div class="era summary highlight"></div>
-                                                        <div class="bf summary highlight">34</div>
-                                                        <div class="hit summary">8</div>
-                                                        <div class="homerun summary">1</div>
-                                                        <div class="strikeout summary">5</div>
-                                                        <div class="bob summary">3</div>
-                                                        <div class="hit-bastsmen summary">0</div>
-                                                        <div class="point-lost summary">4</div>
-                                                        <div class="earned-run summary">3</div>
-                                                        <div class="ip summary">135</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
+                                                <div class="table summary" style="width: 100%;">
+                                                    <div class="row summary" style="height: 32px;
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;">
+                                                        <div class="era summary highlight" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;"></div>
+                                                        <div class="bf summary highlight" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">34</div>
+                                                        <div class="hit summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="bob summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="hit-bastsmen summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">135</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary"style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -657,28 +1267,74 @@ session_start();
                                     </div>
                                 </div>
                             </div>
-                            <div class="home">
-                                <div class="record-one-ball-pitcher-record-table">
-                                    <div class="team-name-row" style="border-bottom: 2px solid rgb(25, 118, 210); ">
-                                        <div class="name">スコマネ西高校</div>
+                            <div class="home" style="margin-bottom: 8px;">
+                                <div class="record-one-ball-pitcher-record-table" style="background-color: #ffffff;">
+                                    <div class="team-name-row" style="border-bottom: 2px solid rgb(255, 111, 0);width: 100%;
+                                        height: 40px;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: flex-end; ">
+                                        <div class="name" style="font-size: 18px;
+                                            font-weight: bold;
+                                            color: #37474f;
+                                            margin-left: 10px;
+                                            margin-bottom: 3px;">スコマネ西高校</div>
                                     </div>
-                                    <div class="table-area">
-                                        <div class="fixed-area">
-                                            <div class="fixed-head">
-                                                <div class="nameArea">
-                                                    <div class="resultHead"></div>
-                                                    <div class="nameHead">選手名</div>
+                                    <div class="table-area" style="display: flex;border-bottom: solid 1px #cfd8dc;">
+                                        <div class="fixed-area" style="font-size: 14px;
+                                            color: #37474f;
+                                            width: 238px;
+                                            border-right: none;
+                                            position: relative;
+                                            border-right: solid 1px #cfd8dc;">
+                                            <div class="fixed-head" style="height: 122px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-bottom: solid 1px #cfd8dc;
+                                                position: relative;
+                                                font-size: 13px;
+                                                color: #78909c;">
+                                                <div class="nameArea" style="display: flex;
+                                                    justify-content: flex-start;
+                                                    align-items: center;
+                                                    width: 100%;
+                                                    height: 100%;">
+                                                    <div class="resultHead" style="width: 40px;
+                                                        height: 100%;
+                                                        border-right: solid 1px #cfd8dc;"></div>
+                                                    <div class="nameHead" style="width: 65%;
+                                                        height: 100%;
+                                                        font-size: 12px;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        padding-left: 8px;">選手名</div>
                                                 </div>
                                             </div>
-                                            <div class="fixed-body">
-                                                <div class="each-row list-item">
-                                                    <div class="playerArea">
-                                                        <div class="pitching-result">
-                                                            <div class="wlsh have-title">負</div>
+                                            <div class="fixed-body" style="border-bottom: solid 1px #cfd8dc;">
+                                                <div class="each-row list-item" style="width: 100%;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        height: 32px;">
+                                                    <div class="playerArea" style="width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        box-sizing: border-box;
+                                                        position: relative;">
+                                                        <div class="pitching-result" style="width: 40px;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            border-right: solid 1px #cfd8dc;">
+                                                            <div class="wlsh have-title" style="font-size: 14px;color: #37474f;">負</div>
                                                         </div>
-                                                        <div class="player">
-                                                            <div class="player-with-flag">
-                                                                <div class="directory-link playerName">
+                                                        <div class="player" style="margin-left: 8px;">
+                                                            <div class="player-with-flag" style="display: flex;align-items: center;">
+                                                                <div class="directory-link playerName" style="font-weight: bold;font-size: 13px;">
                                                                     <div class="player">
                                                                         <div class="name" style="font-size: 16px; color: rgb(13, 71, 161); font-weight: bold;">スコマネ太郎</div>
                                                                     </div>
@@ -687,15 +1343,26 @@ session_start();
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="each-row even list-item">
-                                                    <div class="playerArea">
-                                                        <div class="pitching-result">
-                                                            <div class="wlsh"></div>
+                                                <div class="each-row even list-item" style="background-color: #eceff1;">
+                                                    <div class="playerArea" style="width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        box-sizing: border-box;
+                                                        position: relative;">
+                                                        <div class="pitching-result" style="width: 40px;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            border-right: solid 1px #cfd8dc;">
+                                                            <div class="wlsh" style="font-size: 14px;color: #37474f;"></div>
                                                         </div>
-                                                        <div class="player">
-                                                            <div class="player-with-flag">
-                                                                <div class="directory-link playerName">
-                                                                    <div class="player">
+                                                        <div class="player" style="margin-left: 8px;">
+                                                            <div class="player-with-flag" style="display: flex;align-items: center;">
+                                                                <div class="directory-link playerName" style="font-weight: bold;font-size: 13px;">
+                                                                    <div class="player" >
                                                                         <div class="name" style="font-size: 16px; color: rgb(13, 71, 161); font-weight: bold;">スコマネ次郎</div>
                                                                     </div>
                                                                 </div>
@@ -704,104 +1371,652 @@ session_start();
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="fixed-summary">
-                                                <div class="result"></div>
+                                            <div class="fixed-summary" style="height: 32px;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                color: #37474f;
+                                                padding-right: 10px;">
+                                                <div class="result" style="width: 40px;
+                                                    height: 100%;
+                                                    border-right: solid 1px #cfd8dc;"></div>
                                                 <div class="label">合計</div>
                                             </div>
                                         </div>
-                                        <div class="scrollable-area">
-                                            <div class="scrollable">
-                                                <div class="table header">
-                                                    <div class="row header">
-                                                        <div class="era header highlight">防御率</div>
-                                                        <div class="bf header">打者</div>
-                                                        <div class="hit header">被安打</div>
-                                                        <div class="homerun header">被本塁打</div>
-                                                        <div class="strikeout header">奪三振</div>
-                                                        <div class="bob header">与四球</div>
-                                                        <div class="hit-bastsmen header">与死球</div>
-                                                        <div class="point-lost header">失点</div>
-                                                        <div class="earned-run header">自責点</div>
-                                                        <div class="ip header">投球回</div>
-                                                        <div class="nopg header">投球数</div>
-                                                        <div class="each-ball header">
+                                        <div class="scrollable-area" style="width: 894px;white-space: nowrap;">
+                                            <div class="scrollable" style="width: 100%;
+                                                background-color: #ffffff;
+                                                color: #37474f;
+                                                border-collapse: separate;
+                                                border-spacing: 0;">
+                                                <div class="table header" style="width: 100%;">
+                                                    <div class="row header" style="height: 122px;border-bottom: solid 1px #cfd8dc;">
+                                                        <div class="era header highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">防御率</div>
+                                                        <div class="bf header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">打者</div>
+                                                        <div class="hit header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">被安打</div>
+                                                        <div class="homerun header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">被本塁打</div>
+                                                        <div class="strikeout header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">奪三振</div>
+                                                        <div class="bob header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">与四球</div>
+                                                        <div class="hit-bastsmen header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">与死球</div>
+                                                        <div class="point-lost header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">失点</div>
+                                                        <div class="earned-run header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">自責点</div>
+                                                        <div class="ip header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">投球回</div>
+                                                        <div class="nopg header" sstyle="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">投球数</div>
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">ストレート</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">スライダー</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">フォーク</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">カーブ</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">シュート</div>
                                                         </div>
-                                                        <div class="each-ball header">
+                                                        <div class="each-ball header" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;
+                                                            padding-top: 8px;
+                                                            writing-mode: vertical-rl;">
                                                             <div class="ball-name">チェンジアップ</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="table body">
-                                                    <div class="row body list-item">
-                                                        <div class="era body highlight">4.50</div>
-                                                        <div class="bf body">27</div>
-                                                        <div class="hit body">8</div>
-                                                        <div class="homerun body">1</div>
-                                                        <div class="strikeout body">3</div>
-                                                        <div class="bob body">2</div>
-                                                        <div class="hit-bastsmen body no-data">0</div>
-                                                        <div class="point-lost body">4</div>
-                                                        <div class="earned-run body">3</div>
-                                                        <div class="ip body">6</div>
-                                                        <div class="nopg body">99</div>
-                                                        <div class="each-ball body">46</div>
-                                                        <div class="each-ball body">20</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">5</div>
-                                                        <div class="each-ball body">5</div>
+                                                <div class="table body" style="border-bottom: solid 1px #cfd8dc;
+                                                    border-collapse: separate;
+                                                    border-spacing: 0;
+                                                    width: 100%;">
+                                                    <div class="row body list-item" style="height: 32px;
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: space-between;">
+                                                        <div class="era body highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4.50</div>
+                                                        <div class="bf body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">27</div>
+                                                        <div class="hit body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="bob body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">2</div>
+                                                        <div class="hit-bastsmen body no-data" style="color: #b0bec5;font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">6</div>
+                                                        <div class="nopg body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">99</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">20</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
                                                     </div>
-                                                    <div class="row body even list-item">
-                                                        <div class="era body highlight">4.50</div>
-                                                        <div class="bf body">27</div>
-                                                        <div class="hit body">8</div>
-                                                        <div class="homerun body">1</div>
-                                                        <div class="strikeout body">3</div>
-                                                        <div class="bob body">2</div>
-                                                        <div class="hit-bastsmen body no-data">0</div>
-                                                        <div class="point-lost body">4</div>
-                                                        <div class="earned-run body">3</div>
-                                                        <div class="ip body">6</div>
-                                                        <div class="nopg body">99</div>
-                                                        <div class="each-ball body">46</div>
-                                                        <div class="each-ball body">20</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">10</div>
-                                                        <div class="each-ball body">5</div>
-                                                        <div class="each-ball body">5</div>
+                                                    <div class="row body even list-item" style="background-color: #eceff1; height: 32px;
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: spa">
+                                                        <div class="era body highlight" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4.50</div>
+                                                        <div class="bf body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">27</div>
+                                                        <div class="hit body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="bob body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">2</div>
+                                                        <div class="hit-bastsmen body no-data" style="color: #b0bec5;font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">6</div>
+                                                        <div class="nopg body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">99</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">20</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">10</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="each-ball body" style="font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
                                                     </div>
                                                 </div>
-                                                <div class="table summary">
-                                                    <div class="row summary">
-                                                        <div class="era summary highlight"></div>
-                                                        <div class="bf summary highlight">34</div>
-                                                        <div class="hit summary">8</div>
-                                                        <div class="homerun summary">1</div>
-                                                        <div class="strikeout summary">5</div>
-                                                        <div class="bob summary">3</div>
-                                                        <div class="hit-bastsmen summary">0</div>
-                                                        <div class="point-lost summary">4</div>
-                                                        <div class="earned-run summary">3</div>
-                                                        <div class="ip summary">135</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
-                                                        <div class="each-ball summary">46</div>
+                                                <div class="table summary" style="width: 100%;">
+                                                    <div class="row summary" style="height: 32px;
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;">
+                                                        <div class="era summary highlight" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            background-color: rgba(227, 242, 253, 0.5);
+                                                            width: 36px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;"></div>
+                                                        <div class="bf summary highlight" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">34</div>
+                                                        <div class="hit summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">8</div>
+                                                        <div class="homerun summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">1</div>
+                                                        <div class="strikeout summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">5</div>
+                                                        <div class="bob summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="hit-bastsmen summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">0</div>
+                                                        <div class="point-lost summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">4</div>
+                                                        <div class="earned-run summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">3</div>
+                                                        <div class="ip summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">135</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary"style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
+                                                        <div class="each-ball summary" style="height: 32px;
+                                                            font-family: Oswald;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            width: 27px;
+                                                            border-right: solid 1px #cfd8dc;
+                                                            font-size: 16px;
+                                                            cursor: pointer;">46</div>
                                                     </div>
                                                 </div>
                                             </div>
